@@ -1,4 +1,4 @@
-# wso2-knowledge-base
+# WSO2 Knowledge Base
 Lessons learned working with WSO2 products
 
 ## Utilizing Identity Server 5.3 as a Key Manager instance together with API Manager 1.10
