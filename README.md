@@ -14,7 +14,7 @@ Compare the database-scripts located at <WSO2_HOME>/dbscripts/apimgt for your yo
   
   2.2 If there's already existing applications in the database, they need to be upgraded with some new information in table IDN_OAUTH_CONSUMER_APPS
   ```
-  update IDN_OAUTH_CONSUMER_APPS set PKCE_MANDATORY = 0, PKCE_SUPPORT_PLAIN = 0, APP_STATE = 'ACTIVE' where PKCE_MANDATORY IS NULL & PKCE_SUPPORT_PLAIN IS NULL & APP_STATE IS NULL;
+  update IDN_OAUTH_CONSUMER_APPS set PKCE_MANDATORY = 0, PKCE_SUPPORT_PLAIN = 0, APP_STATE = 'ACTIVE' where PKCE_MANDATORY IS NULL AND PKCE_SUPPORT_PLAIN IS NULL AND APP_STATE IS NULL;
   update IDN_OAUTH_CONSUMER_APPS set GRANT_TYPES = 'urn:ietf:params:oauth:grant-type:saml2-bearer iwa:ntlm refresh_token client_credentials password' where GRANT_TYPES IS NULL;
   ```
 
